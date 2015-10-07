@@ -42,7 +42,6 @@ brew install ringojs
 brew install narwhal
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
@@ -102,3 +101,6 @@ brew install zopfli
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Git tools
+brew install bash-completion
