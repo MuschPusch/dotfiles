@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="/usr/local/sbin:$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -46,3 +46,12 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+# Load rupa's z if installed
+[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+
+# Enable git completion.
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
+alias drupalcs="phpcs --standard=/Users/rhizom/.composer/vendor/drupal/coder/coder_sniffer/Drupal/ --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt'"
