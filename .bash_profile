@@ -63,3 +63,6 @@ ulimit -S -n 2048
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
 eval "$(thefuck --alias FUCK)"
+
+# composer.
+export PATH="$HOME/.composer/vendor/bin:$PATH"
