@@ -55,3 +55,11 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 alias drupalcs="phpcs --standard=/Users/rhizom/.composer/vendor/drupal/coder/coder_sniffer/Drupal/ --extensions='php,module,inc,install,test,profile,theme,js,css,info,txt'"
+
+# Set higher open file limit for grunt tasks. 
+ulimit -S -n 2048
+
+# Install the fuck.
+eval "$(thefuck --alias)"
+# You can use whatever you want as an alias, like for Mondays:
+eval "$(thefuck --alias FUCK)"
