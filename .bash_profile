@@ -66,3 +66,6 @@ eval "$(thefuck --alias FUCK)"
 
 # composer.
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# ctags
+alias ctags="/usr/local/bin/ctags"
