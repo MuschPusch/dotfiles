@@ -104,3 +104,7 @@ brew cleanup
 
 # Git tools
 brew install bash-completion
+
+# ctags
+curl https://raw.githubusercontent.com/shawncplus/phpcomplete.vim/master/misc/ctags-better-php.rb > /usr/local/Library/Formula/ctags-better-php.rb
+brew install ctags-better-php

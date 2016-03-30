@@ -244,3 +244,32 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+drushWrapperLocal() {
+  unset PARAMS
+  for i in $*; do
+    PARAMS=" $PARAMS $i"
+  done
+  fab config drush:"$PARAMS"
+}
+
+fabaliciousWrapper() {
+  unset PARAMS
+  for i in $*; do
+    PARAMS=" $PARAMS $i"
+  done
+  fab config:mbb "$PARAMS"
+}
+
+alias dl=drushWrapperLocal
+drushWrapperMbb() {
+  unset PARAMS
+  for i in $*; do
+    PARAMS=" $PARAMS $i"
+  done
+  fab config:mbb drush:"$PARAMS"
+}
+
+alias dl=drushWrapperLocal
+alias dm=drushWrapperMbb
+alias f=fabaliciousWrapper

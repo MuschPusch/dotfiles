@@ -169,7 +169,9 @@
 	pushInsteadOf = "git://gist.github.com/"
 
 [url "git://gist.github.com/"]
-
 	insteadOf = "gist:"
-
-  templateDir =- "~/.git_template/"
+[user]
+	name = muschpusch
+	email = volkan@factorial.io
+[init]
+	templatedir = ~/.git_template/template
