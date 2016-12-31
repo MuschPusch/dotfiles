@@ -69,3 +69,5 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # ctags
 alias ctags="/usr/local/bin/ctags"
+
+alias recent="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
